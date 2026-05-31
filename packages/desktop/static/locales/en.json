@@ -553,6 +553,10 @@
           "japanese": "日本語",
           "korean": "한국어",
           "portuguese": "Português"
+        },
+        "watcherUsePolling": {
+          "title": "Use polling to watch files",
+          "description": "Needed to detect changes to files on network or remote drives (SFTP, NFS, FUSE) where inotify reports nothing. Uses slightly more CPU. Applies to newly opened files; Observation Mode always polls observed files."
         }
       }
     },

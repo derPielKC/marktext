@@ -177,6 +177,12 @@
           :options="getLanguageOptions()"
           :on-change="(value) => onSelectChange('language', value)"
         />
+        <bool
+          :description="t('preferences.general.misc.watcherUsePolling.title')"
+          :notes="t('preferences.general.misc.watcherUsePolling.description')"
+          :bool="watcherUsePolling"
+          :on-change="(value) => onSelectChange('watcherUsePolling', value)"
+        />
       </template>
     </compound>
   </div>
@@ -220,7 +226,8 @@ const {
   fileSortBy,
   fileSortOrder,
   language,
-  openedFilesInSidebar
+  openedFilesInSidebar,
+  watcherUsePolling
 } = storeToRefs(preferenceStore)
 
 const startUpAction = computed<string>({

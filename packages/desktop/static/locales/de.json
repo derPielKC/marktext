@@ -554,6 +554,10 @@
           "japanese": "日本語",
           "korean": "한국어",
           "portuguese": "Português"
+        },
+        "watcherUsePolling": {
+          "title": "Dateien per Polling überwachen",
+          "description": "Nötig, um Änderungen an Dateien auf Netzwerk-/Remote-Laufwerken (SFTP, NFS, FUSE) zu erkennen, wo inotify nichts meldet. Etwas höhere CPU-Last. Gilt für neu geöffnete Dateien; der Observation-Modus pollt observierte Dateien immer."
         }
       }
     },
