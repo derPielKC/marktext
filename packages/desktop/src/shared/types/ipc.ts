@@ -274,6 +274,7 @@ export interface IpcMainEventChannels {
   'mt::tabs-cycle-left': []
   'mt::tabs-cycle-right': []
   'mt::toggle-observation-mode': []
+  'mt::toggle-split-view': []
   'mt::toggle-view-layout-entry': [entry: string]
   'mt::toggle-view-mode-entry': [entry: string]
   'mt::update-file': [payload: { type: 'add' | 'change' | 'unlink'; change: FileChangeDetail }]

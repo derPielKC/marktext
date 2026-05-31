@@ -621,6 +621,12 @@ const commands: CommandDescriptor[] = [
       bus.emit('view:toggle-layout-entry', 'showTabBar')
     }
   },
+  {
+    id: 'view.toggle-split-view',
+    execute: async() => {
+      bus.emit('view:toggle-split-view')
+    }
+  },
 
   {
     id: 'view.text-direction',
